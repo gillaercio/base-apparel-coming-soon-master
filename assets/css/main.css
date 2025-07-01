@@ -1,0 +1,64 @@
+body {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+}
+
+#content {
+  min-width: 320px;
+}
+
+.logo-content {
+  width: 80px;
+  margin: 20px;
+  /* position: absolute; */
+}
+
+.hero-picture {
+  width: 100%;
+  height: 230px;
+  /* margin-top: 60px; */
+  background-image: url(../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-content {
+  padding: 20px;
+}
+
+.title-content {
+  font: var(--text-lg);
+  color: var(--Desaturated-Red);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 20px 60px;
+  opacity: .6;
+}
+
+span {
+  color: black;
+  font-weight: 600;
+}
+
+.paragraph-content {
+  font: var(--text-md);
+  text-align: center;
+  color: var(--Desaturated-Red);
+  margin-bottom: 20px;
+}
+
+.sendButton {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid var(--Desaturated-Red);
+  font: var(--text);
+  text-align: left;
+  color: var(--Desaturated-Red);
+  opacity: .6;
+}
+
+/* background: var(--Soft-Red);
+background-image: var(--Button-gradient); */
