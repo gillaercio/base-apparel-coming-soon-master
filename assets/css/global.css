@@ -18,6 +18,6 @@ html {
 
   --Josefin-Sans: "Josefin Sans", sans-serif;
   --text-lg: 300 2.8em/120% var(--Josefin-Sans);
-  --text-md: 600 1.5em/150% var(--Josefin-Sans);
+  --text-md: 600 1.4em/150% var(--Josefin-Sans);
   --text: 400 1.4em/150% var(--Josefin-Sans);
 }
