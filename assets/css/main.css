@@ -8,7 +8,7 @@ body {
 #content {
   width: 320px;
   display: grid;
-  transition: width .3 ease-out, height .3  ease-out;
+  transition: width .3 ease-in-out, height .3  ease-in-out;
 }
 
 .logo-content {
@@ -39,7 +39,7 @@ body {
   opacity: .8;
 }
 
-span {
+.title-content span {
   color: black;
   font-weight: 600;
 }
@@ -52,6 +52,11 @@ span {
 }
 
 .form-group {
+  display: grid;
+  gap: 5px;
+}
+
+.input-wrapper {
   width: 100%;
   /* max-width: 320px; */
   margin: 0 auto;
@@ -59,13 +64,13 @@ span {
 }
 
 .email {
-  padding: 15px 100px 15px 20px;
+  padding: 10px 100px 10px 20px;
   width: 100%;
   border-radius: 30px;
-  border: 1px solid var(--Desaturated-Red);
+  border: 2px solid var(--Desaturated-Red);
   font: var(--text);
   color: var(--Desaturated-Red);
-  opacity: .6;
+  opacity: .8;
 }
 
 .sendButton {
@@ -74,10 +79,9 @@ span {
   right: 0;
   transform: translateY(-50%);
   height: 100%;
-  width: 80px;
+  width: 60px;
   border-radius: 30px;
-  /* border-radius: 0 30px 30px 0; */
-  background-image: linear-gradient(135deg, hsl(0, 100%, 98%), var(--Soft-Red));
+  background-image: var(--Button-gradient);
   /* border: 1px solid var(--Desaturated-Red); */
   border: none;
   cursor: pointer;
@@ -87,8 +91,20 @@ span {
   padding: 0;
 }
 
+.sendButton:hover {
+  background-image: var(--Button-gradient-active);
+  box-shadow: 0px 0px 20px hsl(0, 74%, 80%);
+}
+
 .sendButton img {
   width: 10px;
+}
+
+.error-message {
+  color: var(--Soft-Red);
+  font: var(--text-md);
+  margin-left: 20px;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 1024px) {
@@ -98,7 +114,7 @@ span {
     justify-self: center;
     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
     position: absolute;
-    transition: width .3 ease-out, height .3  ease-out;
+    transition: width .3 ease-in-out, height .3  ease-in-out;
   }
 
   .logo-content {
@@ -148,16 +164,16 @@ span {
 
   .email {
     /* padding: 18px 25px; */
-    padding: 18px 110px 18px 25px;
+    padding: 13px 110px 13px 25px;
     /* width: 100%; */
   }
 
   .sendButton {
-    width: 90px;
+    width: 80px;
     /* padding: 18px 30px; */
   }
 
   .sendButton img {
-    width: 12px;
+    width: 10px;
   }
 }
